@@ -1,7 +1,10 @@
 const express = require("express");
-const { removeAllListeners } = require("nodemon");
+const connectDB = require('./config/db')
 
 const app = express();
+
+//Connect Databases
+connectDB()
 
 app.get("/", (req, res) =>
   res.json({ msg: "Welcom to the ContactKeeper API..." })
