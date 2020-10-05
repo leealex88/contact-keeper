@@ -1,5 +1,5 @@
 const express = require("express");
-const connectDB = require('./routes/config/db')
+const connectDB = require('./config/db')
 
 const app = express();
 
@@ -8,7 +8,7 @@ connectDB()
 
 //Init Middleware
 
-await.use(express.json({extended: false}))
+// await.use(express.json({extended: false}))
 
 
 

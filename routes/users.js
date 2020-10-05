@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const User = require("../models/User");
+const User = require("./models/User");
 //POST submiting something to the data
 // @route POST api/users
 // @desc Register a user
