@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const ContactSchema = mongoose.Schema({
   user: {
-    type: mongoose.SchemaTypes.ObjectId,
+    type: mongoose.Schema.Types.ObjectId,
     ref: "users",
   },
   name: {
@@ -16,7 +16,6 @@ const ContactSchema = mongoose.Schema({
   phone: {
     type: String,
   },
-
   type: {
     type: String,
     default: "personal",
