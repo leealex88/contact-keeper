@@ -8,7 +8,7 @@ connectDB()
 
 //Init Middleware
 
-// await.use(express.json({extended: false}))
+app.use(express.json({extended: false}))
 
 
 
