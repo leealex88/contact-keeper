@@ -43,7 +43,7 @@ const ContactState = (props) => {
     contactReducer,
     initialState
   );
-  console.log("another contacts", state.contacts);
+  console.log("state", state);
   // Add COntact
 
   // Delete Contact
